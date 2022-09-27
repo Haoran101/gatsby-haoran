@@ -1,0 +1,18 @@
+#___gatsby {
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+}
+
+div#gatsby-focus-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}

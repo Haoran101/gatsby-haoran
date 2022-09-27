@@ -1,0 +1,36 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "portfolio",
+  "author": "haoran",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mdx-js/react": "^2.1.3",
+    "@popperjs/core": "^2.6.0",
+    "bootstrap": "^5.2.1",
+    "gatsby": "^4.23.0",
+    "gatsby-omni-font-loader": "^2.0.2",
+    "gatsby-plugin-image": "^2.23.0",
+    "gatsby-plugin-material-ui": "^4.0.2",
+    "gatsby-plugin-mdx": "^4.2.0",
+    "gatsby-plugin-sharp": "^4.23.0",
+    "gatsby-source-filesystem": "^4.23.0",
+    "gatsby-transformer-sharp": "^4.23.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-helmet": "^6.1.0",
+    "rsuite": "^5.19.0"
+  }
+}
