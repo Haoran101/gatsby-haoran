@@ -3,11 +3,14 @@ import * as React from 'react'
 import Header from '../components/header'
 import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/seo'
+import Layout from '../components/layout'
 
 // Step 2: Define your component
 const ResumePage = () => {
   return (
-    <Header/>
+    <Layout>
+      Resume Page
+    </Layout>
   )
 }
 
