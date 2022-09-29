@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
 
-const CustomCard = ({ frontmatter, color }) => {
+const CustomCard = ({ key, frontmatter, color }) => {
 
     console.log(frontmatter.tags)
 
@@ -13,12 +13,12 @@ const CustomCard = ({ frontmatter, color }) => {
 
     console.log(colorName)
 
-    return (<article className={colorName}>
-        <Link className="postcard__img_link" to="/">
+    return (<article className={colorName} key={key}>
+        <Link className="postcard__img_link" to={`/project/${frontmatter.slug}`}>
             <img className="postcard__img" src={frontmatter.img_src} alt={frontmatter.img_title} />
         </Link>
         <div className="postcard__text">
-            <h1 className="postcard__title blue"><Link to="/">{frontmatter.project_title}</Link></h1>
+            <h1 className="postcard__title blue"><Link to={`/project/${frontmatter.slug}`}>{frontmatter.project_title}</Link></h1>
             <div className="postcard__subtitle small">
                 {frontmatter.project_subtitle}
             </div>

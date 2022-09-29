@@ -20,7 +20,7 @@ const ProjectPage = ({ data }) => {
 			<div className="container py-4 project-container">
 			{
 				data.allMdx.nodes.map((node, i) => 
-				<CustomCard frontmatter={node.frontmatter} color={colors[i % 4]}></CustomCard>
+				<CustomCard key={node.id} frontmatter={node.frontmatter} color={colors[i % 4]}></CustomCard>
 				)	
 			}
 			</div>
