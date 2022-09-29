@@ -1,30 +1,52 @@
 import * as React from 'react'
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
-import { Link, graphql } from 'gatsby'
+import CustomCard from '../../components/product_article'
+import '../../styles/project_index.scss'
+import { graphql } from 'gatsby'
 
 const ProjectPage = ({ data }) => {
-  return (
-    <Layout>
-      Project Page
-    </Layout>
-  )
+
+	const colors = ["blue", "red", "green", "yellow"]
+
+	const first = data.allMdx.nodes[2].frontmatter
+
+	console.log(data.allMdx.nodes)
+	console.log(first)
+	
+	return (
+		<Layout>
+			
+			<div className="container py-4 project-container">
+			{
+				data.allMdx.nodes.map((node, i) => 
+				<CustomCard frontmatter={node.frontmatter} color={colors[i % 4]}></CustomCard>
+				)	
+			}
+			</div>
+		</Layout>
+	)
 }
 
-// export const query = graphql`
-//   query {
-//     allMdx(sort: {fields: frontmatter___date, order: DESC}) {
-//       nodes {
-//         frontmatter {
-//           date(formatString: "MMM-DD-YYYY")
-//           title
-//           slug
-//         }
-//         id
-//       }
-//     }
-//   }
-// `
+export const query = graphql`
+query {
+  allMdx {
+	nodes {
+	  frontmatter {
+		date
+		description
+		img_src
+		img_title
+		project_subtitle
+		project_title
+		tags
+		slug
+	  }
+	  id
+	}
+  }
+}
+`
 
 export const Head = () => <Seo title="Project" />
 
