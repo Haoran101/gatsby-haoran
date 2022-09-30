@@ -1,0 +1,52 @@
+---
+experience:
+  - company: Sea (Garena) Pte Ltd
+    period: Jul 2022 - Sep 2022
+    title: Engineer, Quality Assurance
+    description: Test planning and execution on cloud products (SealCloud)
+    job: 
+    - Contributed to manual Web UI testing process for Sealcloud Team.
+    - Designed test plan and executed test cases on 4 cloud modules.
+    - Collaborated with Product Managers and UX Designers for product requirements collation.
+    - Experienced in building automation UI test framework prototype with Pytest, Selenium and Allure Report.
+    skills:
+    - Manual Testing
+    - Web GUI Testing
+    - Test Planning and Management
+  - company: Autodesk Asia Pte Ltd
+    period: Jan 2021 - Dec 2021
+    title: Software Engineer in Test Intern
+    description: Improve big data pipeline automation test coverage
+    job: 
+    - Contributed to 12 automation test projects for Product Analysis & Data Aggregation Team.
+    - Implemented and maintained 16 automation test suites for 6 components and workflows.
+    - Acquired skills in AWS, Jenkins, Java/TestNG, Python/Pytest, SQL.
+    - Increased 90% of automation test coverage on average and reported 5 production issues.
+    skills:
+    - Automation Testing
+    - Java
+    - TestNG
+    - Pytest
+    - Python
+    - Jenkins
+    - AWS
+skill:
+  - Java
+  - TestNG
+  - Python
+  - Pytest
+  - Selenium
+  - HTML, CSS, JavaScript
+  - Gatsby
+  - PHP
+  - SQL
+  - Jenkins
+  - C
+  - Amazon Web Services (AWS)
+  - Google Cloud Platform (GCP)
+  - Firebase
+  - Flutter
+  - MATLAB
+  - Adobe Photoshop
+  - Adobe Premiere
+  

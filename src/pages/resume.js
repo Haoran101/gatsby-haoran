@@ -1,12 +1,31 @@
 // Step 1: Import React
 import * as React from 'react'
 import Header from '../components/header'
-import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/seo'
 import Layout from '../components/layout'
+import { graphql } from "gatsby"
 
-// Step 2: Define your component
-const ResumePage = () => {
+export const query = graphql`
+  query ($id: String) {
+    resumeYaml(id: {eq: $id}) {
+      skill
+      experience {
+        company
+        description
+        job
+        period
+        skills
+        title
+      }
+    }
+  }
+`
+
+
+const ResumePage = ({ data }) => {
+
+  console.log(data)
+  
   return (
     <Layout>
       Resume Page
