@@ -10,12 +10,12 @@ const IndexPage = () => {
     <Layout>
       <main className="px-3 my-auto">
         <h1>Hello.</h1>
-        <p className="lead px-2">
+        <p className="lead px-2 fs-4">
             Software Test Engineer <span className="slash">/</span> Quality Assurance <br></br>
             passionate <span className="slash">/</span> detail-oriented <span className="slash">/</span> quick-learner
         </p>
         <p className="lead">
-          <a href="/" className="btn btn-lg btn-secondary fw-bold border-white bg-white">Know More</a>
+          <a href="/" className="btn btn-md btn-secondary fw-bold border-white bg-white my-4">Know More</a>
         </p>
       </main>
 
