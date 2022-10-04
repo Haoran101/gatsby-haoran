@@ -1,21 +1,19 @@
 import { Link } from "gatsby";
 import React from "react";
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const CustomCard = ({ key, frontmatter, color }) => {
-
-    console.log(frontmatter.tags)
 
     const tagItems = frontmatter.tags.map((tag_content) =>
         <li className="tag__item" key={tag_content}>{tag_content}</li>
     )
 
     const colorName = "postcard dark " + color
-
-    console.log(colorName)
+    const image = getImage(frontmatter.index_image)
 
     return (<article className={colorName} key={key}>
         <Link className="postcard__img_link" to={`/project/${frontmatter.slug}`}>
-            <img className="postcard__img" src={frontmatter.img_src} alt={frontmatter.img_title} />
+            <GatsbyImage className="postcard__img" image={image} alt={frontmatter.img_title}/>
         </Link>
         <div className="postcard__text">
             <h1 className="postcard__title blue"><Link to={`/project/${frontmatter.slug}`}>{frontmatter.project_title}</Link></h1>

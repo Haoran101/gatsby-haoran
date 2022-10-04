@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 const CustomHeader = ({currentPage}) => {
 
     return (
-        <header>
+        <header className='pb-2 text-center'>
             <div>
                 <h3 className="float-md-start mb-0 inner">Haoran Wei</h3>
                 <nav className="nav nav-masthead justify-content-center float-md-end">

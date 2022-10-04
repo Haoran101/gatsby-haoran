@@ -9,20 +9,14 @@ const ProjectPage = ({ data }) => {
 
 	const colors = ["blue", "red", "green", "yellow"]
 
-	const first = data.allMdx.nodes[2].frontmatter
-
-	console.log(data.allMdx.nodes)
-	console.log(first)
-	
 	return (
 		<Layout>
-			
 			<div className="container py-4 project-container">
-			{
-				data.allMdx.nodes.map((node, i) => 
-				<CustomCard key={node.id} frontmatter={node.frontmatter} color={colors[i % 4]}></CustomCard>
-				)	
-			}
+				{
+					data.allMdx.nodes.map((node, i) =>
+						<CustomCard key={node.id} frontmatter={node.frontmatter} color={colors[i % 4]}></CustomCard>
+					)
+				}
 			</div>
 		</Layout>
 	)
@@ -30,21 +24,25 @@ const ProjectPage = ({ data }) => {
 
 export const query = graphql`
 query {
-  allMdx {
-	nodes {
-	  frontmatter {
-		date
-		description
-		img_src
-		img_title
-		project_subtitle
-		project_title
-		tags
-		slug
-	  }
-	  id
-	}
-  }
+		allMdx {
+		  nodes {
+			id
+			frontmatter {
+			  description
+			  project_subtitle
+			  project_title
+			  tags
+			  slug
+			  date
+			  img_title
+			  index_image {
+				childImageSharp {
+				  gatsbyImageData
+				}
+			  }
+			}
+		  }
+		}
 }
 `
 

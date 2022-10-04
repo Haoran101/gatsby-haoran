@@ -8,7 +8,7 @@ import Layout from '../components/layout'
 const IndexPage = () => {
   return (
     <Layout>
-      <main className="px-3 my-auto">
+      <main className="px-3 my-auto text-center">
         <h1>Hello.</h1>
         <p className="lead px-2 fs-4">
             Software Test Engineer <span className="slash">/</span> Quality Assurance <br></br>
@@ -19,7 +19,7 @@ const IndexPage = () => {
         </p>
       </main>
 
-      <footer className="mt-auto text-white-50">
+      <footer className="mt-auto text-white-50 text-center">
         <p>Cover template for <a href="https://getbootstrap.com/" className="text-white">Bootstrap</a>, by <a
           href="https://twitter.com/mdo" className="text-white">@mdo</a>.</p>
       </footer>

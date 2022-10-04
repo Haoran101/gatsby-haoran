@@ -155,8 +155,8 @@ const ResumePage = ({ data }) => {
             </div>
          </div>
          <div className='container'>
-            <h2 className='my-5'>Skills</h2>
-            <div className="icon-row mt-3">
+            <h2 className='my-5 text-center'>Skills</h2>
+            <div className="icon-row mt-3 text-center">
                {
                   data.resumeYaml.skill
                      .map((skill) => {
