@@ -35,6 +35,11 @@ module.exports = {
         path: `./resume/`,
       },
     },
-    
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/images/gatsby-icon.png',
+      },
+    },
   ],
 };
