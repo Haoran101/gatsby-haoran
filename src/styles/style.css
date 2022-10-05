@@ -53,3 +53,13 @@ body {
 .slash {
   color: antiquewhite;
 }
+
+.footer-container a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.footer-container a:hover {
+  text-decoration: none;
+  color: cyan;
+}
