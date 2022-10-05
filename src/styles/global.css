@@ -9,7 +9,7 @@ html {
 body {
     margin: 0px;
     height: 100%;
-    background:  url("../images/pexels-felix-mittermeier-956999.jpg") repeat-y;
+    background:  url("../images/galaxy_pattern.jpg") repeat;
 }
 
 div#gatsby-focus-wrapper {
