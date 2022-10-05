@@ -17,7 +17,7 @@ const BlogPost = ({ data, children }) => {
         style = {{overflow: "unset"}}
       ></GatsbyImage></div>
       <div className='text-light blog-wrapper'>{children}</div>
-      <div className='py-4 blog-wrapper text-center'>
+      <div className='py-4 back-wrapper text-center'>
         <a href="../../project">
           <span>
             <i class="fa-solid fa-arrow-left"></i>

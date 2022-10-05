@@ -1,25 +1,31 @@
-.blog-wrapper a {
+.blog-wrapper a, .back-wrapper a{
     text-decoration: none;
     color: aliceblue;
 }
 
-.blog-wrapper a:hover{
+.blog-wrapper a:hover, .back-wrapper a:hover{
     color: cyan;
+}
+
+.back-wrapper {
+    background-color: rgba(0, 0, 3, 0.2);
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 .blog-wrapper h1 , h2, h3, h4, h5, h6 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    text-shadow: 5px 5px black;
+    text-shadow: 2px 2px black;
     color: azure;
     font-weight: bold;
 }
 
-.blog-wrapper {
+.blog-wrapper, .back-wrapper {
     font-family: 'Open Sans', sans-serif;
 }
 
-.blog-wrapper p,li {
+.blog-wrapper p, .blog-wrapper li {
     font-size: 1.1rem;
-    text-shadow: 3px 3px black;
+    text-shadow: 0.5px 0.5px black;
 }

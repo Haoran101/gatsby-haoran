@@ -23,27 +23,27 @@ const ProjectPage = ({ data }) => {
 }
 
 export const query = graphql`
-query {
-		allMdx {
-		  nodes {
-			id
-			frontmatter {
-			  description
-			  project_subtitle
-			  project_title
-			  tags
-			  slug
-			  date
-			  img_title
-			  index_image {
-				childImageSharp {
-				  gatsbyImageData
-				}
-			  }
-			}
-		  }
-		}
-}
+{
+    allMdx(sort: {fields: frontmatter___date, order: DESC}) {
+      nodes {
+        id
+        frontmatter {
+          description
+          project_subtitle
+          project_title
+          tags
+          slug
+          date
+          img_title
+          index_image {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
+        }
+      }
+    }
+  }
 `
 
 export const Head = () => <Seo title="Project" />
