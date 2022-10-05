@@ -3,17 +3,30 @@ import { graphql } from 'gatsby'
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import '../../styles/blog.css' 
 
 const BlogPost = ({ data, children }) => {
   const hero_image = getImage(data.mdx.frontmatter.hero_image)
 
   return (
     <Layout pageTitle={data.mdx.frontmatter.project_title}>
+      <div className='py-4'>
       <GatsbyImage
         image={hero_image}
         alt="alt"
-      ></GatsbyImage>
-        {children}
+        style = {{overflow: "unset"}}
+      ></GatsbyImage></div>
+      <div className='text-light blog-wrapper'>{children}</div>
+      <div className='py-4 blog-wrapper text-center'>
+        <a href="../../project">
+          <span>
+            <i class="fa-solid fa-arrow-left"></i>
+          </span>
+          <span>
+            Back to all projects
+          </span>
+        </a>
+      </div>
     </Layout>
   )
 }
