@@ -90,6 +90,15 @@ skill:
   - name: JavaScript
     icon: fa-brands fa-square-js
     image: NA
+  - name: Linux
+    icon: fa-brands fa-linux
+    image: NA
+  - name: Shell/Bash
+    icon: fa-solid fa-terminal
+    image: NA
+  - name: Kubernetes
+    icon: NA
+    image: https://upload.wikimedia.org/wikipedia/labs/thumb/b/ba/Kubernetes-icon-color.svg/2110px-Kubernetes-icon-color.svg.png
   - name: Gatsby
     icon: NA
     image: https://cdn.iconscout.com/icon/free/png-256/gatsby-3521442-2944886.png
