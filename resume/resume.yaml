@@ -137,6 +137,9 @@ skill:
   - name: TestNG
     icon: NA
     image: BG--https://i0.wp.com/blog.knoldus.com/wp-content/uploads/2020/01/TESTNG.png?fit=810%2C456&ssl=1
+  - name: Cypress
+    icon: NA
+    image: https://www.cypress.io/_astro/navbar-brand.0d71ff96.svg
   - name: Google Cloud Platform (GCP)
     icon: NA
     image: https://logos-world.net/wp-content/uploads/2021/02/Google-Cloud-Emblem.png
