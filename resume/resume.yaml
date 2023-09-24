@@ -6,16 +6,21 @@ experience:
     title: Software Quality Engineer 2
     description: System Testing on Edge Computing Products (Project Frontier)
     job: 
-    - Designed and executed software and hardware end-to-end testing on Edge computing product.
-    -	Led the consolidated test email report project and collaborated closely with international teams and DevOps
-    -	Acquired skills in Linux, Shell script, Jenkins, Kubernetes, Docker, Git and Hardware knowledges.
+    - Designed and executed tests for software and hardware system-level end-to-end testing on Edge computing product.
+    -	Led the consolidated test email report project and collaborated closely with international teams and DevOps.
+    - Experienced in Kubernetes-native application deployment and administration.
+    - Automated web UI sanity and end-to-end tests using Cypress testing framework.
+    -	Acquired skills in Linux, Shell script, Jenkins, Kubernetes, Docker, Git, Cypress and Hardware knowledges.
     skills:
     - System Testing
     - End-to-end Testing
     - Linux
     - Shell/Bash
     - Kubernetes
+    - Docker
+    - Helm
     - Jenkins
+    - Cypress
   - company: Sea (Garena) Pte Ltd
     period: Jul 2022 - Sep 2022
     year: 2022
