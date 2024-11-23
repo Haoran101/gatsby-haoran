@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import { graphql } from "gatsby"
 import '../styles/resume.css'
 import ReactTooltip from 'react-tooltip';
-import ResumeFile from "../../resume/Wei Haoran Resume.pdf"
+import ResumeFile from "../content/readme/resume/Wei Haoran Resume.pdf"
 
 export const query = graphql`
   query ($id: String) {

@@ -5,13 +5,6 @@ module.exports = {
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: `project`,
-        path: `${__dirname}/project`,
-      }
-    },
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
     {
@@ -30,15 +23,23 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-transformer-yaml`,
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `project`,
+        path: `${__dirname}/src/content/readme/project/`,
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `./resume/`,
+        name: `resume`,
+        path: `${__dirname}/src/content/readme/resume/`,
       },
     },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: 'src/images/gatsby-icon.png',
+        icon: `${__dirname}/src/content/readme/resume/images/gatsby-icon.png`,
       },
     },
   ],

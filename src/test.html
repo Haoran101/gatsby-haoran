@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starry Sky Background</title>
+    <style>
+        /* Make sure the body takes up the full viewport */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #03060bc3; /* Dark background for the night sky */
+            overflow: hidden; /* Hide anything that overflows */
+            position: relative;
+        }
+
+        /* Create a starry sky */
+        .star {
+            position: absolute;
+            border-radius: 50%;
+            background-color: white;
+            opacity: 0.8;
+            animation: twinkle 1.5s infinite alternate;
+        }
+
+        /* Create random positions and sizes for stars */
+        .star:nth-child(odd) {
+            animation-duration: 1.5s;
+        }
+
+        .star:nth-child(even) {
+            animation-duration: 2s;
+        }
+
+        /* Animation for the twinkling effect */
+        @keyframes twinkle {
+            0% {
+                opacity: 0.3;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Create a few stars in random positions */
+        .star-field {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="star-field">
+        <!-- Random stars will be added here using JavaScript -->
+    </div>
+
+    <script>
+        // Generate random stars and add them to the page
+        const starField = document.querySelector('.star-field');
+
+        function generateStars(num) {
+            for (let i = 0; i < num; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star');
+                
+                // Random size between 1px and 3px
+                const size = Math.random() * 3 + 1;
+                star.style.width = `${size}px`;
+                star.style.height = `${size}px`;
+
+                // Random position within the viewport
+                const xPos = Math.random() * window.innerWidth;
+                const yPos = Math.random() * window.innerHeight;
+                star.style.left = `${xPos}px`;
+                star.style.top = `${yPos}px`;
+
+                // Add the star to the star field
+                starField.appendChild(star);
+            }
+        }
+
+        // Generate 200 stars
+        generateStars(200);
+    </script>
+</body>
+</html>

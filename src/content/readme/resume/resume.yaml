@@ -1,10 +1,30 @@
 ---
 experience:
+  - company: Garena Pte Ltd
+    period: Feb 2024 - Current
+    year: 2024
+    title: Software Quality Engineer
+    description: Full-stack Testing on Auth, Payment, Shop, Game Admin Systems
+    job:
+    - > 
+      Conducted server-side API testing on essential and critical services including payment, 
+      in-app-purchase, order management, authentication and authorization.
+    - Performed integration testing with 20+ global payment gateway partners.
+    - UI/UX Testing on the Garena official top-up center website which sells in-game items in 20+ regions worldwide.
+    - Improved on existing API automation testing frameworks and introduced open-source API mocking tool to team.
+    - Worked as a release manager on multiple Kubernetes clusters for development, testing and production.
+    - Collaborated with DevOps on improving CI/CD Jenkins pipeline and Gitlab CI for a smoother release workflow.
+    skills:
+    - API Testing
+    - Integration Testing
+    - Contract Testing
+    - End-to-end Testing
+    - Ansible
   - company: Dell Technologies
-    period: Oct 2022 - Current
-    year: 2022
+    period: Oct 2022 - Feb 2024
+    year: 2023
     title: Software Quality Engineer 2
-    description: System Testing on Edge Computing Products (Project Frontier)
+    description: System Testing on Dell NativeEdge
     job: 
     - Designed and executed tests for software and hardware system-level end-to-end testing on Edge computing product.
     -	Led the consolidated test email report project and collaborated closely with international teams and DevOps.
@@ -14,6 +34,9 @@ experience:
     skills:
     - System Testing
     - End-to-end Testing
+    - Continuous Testing
+    - CI/CD
+    - Git
     - Linux
     - Shell/Bash
     - Kubernetes
@@ -27,7 +50,7 @@ experience:
     title: Engineer, Quality Assurance
     description: Test planning and execution on cloud products (SealCloud)
     job: 
-    - Contributed to manual Web UI testing process for Sealcloud Team.
+    - Contributed to manual Web UI testing process for Sea Labs Seacloud Team.
     - Designed test plan and executed test cases on 4 cloud modules.
     - Collaborated with Product Managers and UX Designers for product requirements collation.
     - Experienced in building automation UI test framework prototype with Pytest, Selenium and Allure Report.
@@ -119,15 +142,9 @@ skill:
   - name: Jenkins
     icon: fa-brands fa-jenkins
     image: NA
-  - name: Jira
+  - name: Project Management
     icon: fa-brands fa-jira
     image: NA
-  - name: Confluence
-    icon: fa-brands fa-confluence
-    image: NA
-  # - name: C Programming Language
-  #   icon: fa-solid fa-c
-  #   image: NA
   - name: Amazon Web Services (AWS)
     icon: fa-brands fa-aws
     image: NA
@@ -149,9 +166,6 @@ skill:
   - name: Flutter
     icon: NA
     image: https://user-images.githubusercontent.com/51419598/152648731-567997ec-ac1c-4a9c-a816-a1fb1882abbe.png
-  - name: MATLAB
-    icon: NA
-    image: http://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png
   - name: Adobe Photoshop
     icon: NA
     image: https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png

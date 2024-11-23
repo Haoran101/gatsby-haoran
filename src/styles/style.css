@@ -16,9 +16,52 @@
  * Base structure
  */
 
-body {
-  /* text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5); */
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+ /* Make sure the body takes up the full viewport */
+ html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #03060bc3; /* Dark background for the night sky */
+  overflow: hidden; /* Hide anything that overflows */
+  position: relative;
+}
+
+/* Create a starry sky */
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.8;
+  animation: twinkle 1.5s infinite alternate;
+}
+
+/* Create random positions and sizes for stars */
+.star:nth-child(odd) {
+  animation-duration: 1.5s;
+}
+
+.star:nth-child(even) {
+  animation-duration: 2s;
+}
+
+/* Animation for the twinkling effect */
+@keyframes twinkle {
+  0% {
+      opacity: 0.3;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+/* Create a few stars in random positions */
+.star-field {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .cover-container {
