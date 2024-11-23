@@ -42,14 +42,14 @@ React.useEffect(() => {
 
   return (
     <Layout>
-      <main className="px-3 my-auto text-center star-field" ref={starFieldRef}>
+      <main className="px-3 my-auto text-center">
         <h1>Hello.</h1>
         <p className="lead px-2 fs-4">
           Software Test Engineer <span className="slash">/</span> Quality Assurance <br></br>
           passionate <span className="slash">/</span> detail-oriented <span className="slash">/</span> quick-learner
         </p>
         <p className="lead">
-          <a href="./resume" className="btn btn-md btn-secondary fw-bold border-white bg-white my-4">Know More</a>
+          <a href="./resume" className="btn btn-md fw-bold border-white bg-white text-black my-4">Know More</a>
         </p>
       </main>
 

@@ -8,7 +8,8 @@
 .btn-secondary:hover,
 .btn-secondary:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
+  text-shadow: none;
+  /* Prevent inheritance from `body` */
 }
 
 
@@ -16,14 +17,17 @@
  * Base structure
  */
 
- /* Make sure the body takes up the full viewport */
- html, body {
+/* Make sure the body takes up the full viewport */
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
-  background-color: #03060bc3; /* Dark background for the night sky */
-  overflow: hidden; /* Hide anything that overflows */
+  background-color: #03060bc3;
+  /* Dark background for the night sky */
+  overflow: hidden;
+  /* Hide anything that overflows */
   position: relative;
 }
 
@@ -48,25 +52,52 @@
 /* Animation for the twinkling effect */
 @keyframes twinkle {
   0% {
-      opacity: 0.3;
+    opacity: 0.3;
   }
+
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
+
 
 /* Create a few stars in random positions */
 .star-field {
-  width: 100%;
-  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: linear-gradient(to bottom, #020024, #00003d, #004857);
+  background-color: #020024;
+}
+
+.main-container {
+  z-index: 10;
 }
 
 .cover-container {
-  max-width: 52rem;
+  z-index: 10;
+  overflow-y: auto;
+  /* Makes the content scrollable vertically */
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  padding-left: calc(50vw - 26rem) !important;
+  padding-right: calc(50vw - 26rem) !important;
+  width: 100% !important;
+  ;
+  /* Takes full width but is constrained by max-width */
+  height: 100% !important;
+  ;
+  scrollbar-width: none;
 }
+
+/* For Webkit browsers (Chrome, Safari) */
+.cover-container::-webkit-scrollbar {
+  display: none;
+}
+
 /*
  * Header
  */
@@ -84,7 +115,7 @@
   border-bottom-color: rgba(255, 255, 255, .25);
 }
 
-.nav-masthead .nav-link + .nav-link {
+.nav-masthead .nav-link+.nav-link {
   margin-left: 1rem;
 }
 

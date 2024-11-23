@@ -37,6 +37,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/content/readme/resume/images/`,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         icon: `${__dirname}/src/content/readme/resume/images/gatsby-icon.png`,

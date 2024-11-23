@@ -105,10 +105,10 @@ skill:
     image: NA
   - name: Pytest
     icon: NA
-    image: BG--https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Pytest_logo.svg/2048px-Pytest_logo.svg.png
+    image: BG--images/icons/pytest.png
   - name: Selenium
     icon: NA
-    image: https://camo.githubusercontent.com/4b95df4d6ca7a01afc25d27159804dc5a7d0df41d8131aaf50c9f84847dfda21/68747470733a2f2f73656c656e69756d2e6465762f696d616765732f73656c656e69756d5f6c6f676f5f7371756172655f677265656e2e706e67
+    image: images/icons/selenium.png
   - name: HTML
     icon: fa-brands fa-html5
     image: NA
@@ -126,10 +126,10 @@ skill:
     image: NA
   - name: Kubernetes
     icon: NA
-    image: https://upload.wikimedia.org/wikipedia/labs/thumb/b/ba/Kubernetes-icon-color.svg/2110px-Kubernetes-icon-color.svg.png
+    image: images/icons/kubernetes.png
   - name: Gatsby
     icon: NA
-    image: https://cdn.iconscout.com/icon/free/png-256/gatsby-3521442-2944886.png
+    image: images/icons/gatsby.webp
   - name: Bootstrap
     icon: fa-brands fa-bootstrap
     image: NA
@@ -153,23 +153,20 @@ skill:
     image: NA
   - name: TestNG
     icon: NA
-    image: BG--https://i0.wp.com/blog.knoldus.com/wp-content/uploads/2020/01/TESTNG.png?fit=810%2C456&ssl=1
-  - name: Cypress
-    icon: NA
-    image: https://docs.cypress.io/img/logo/cypress-logo-dark.png
+    image: BG--images/icons/TestNG.png
+  # - name: Cypress
+  #   icon: NA
+  #   image: images/icons/cypress.png
   - name: Google Cloud Platform (GCP)
     icon: NA
-    image: https://logos-world.net/wp-content/uploads/2021/02/Google-Cloud-Emblem.png
-  - name: Firebase
-    icon: NA
-    image: https://firebase.google.com/static/downloads/brand-guidelines/PNG/logo-logomark.png
+    image: images/icons/Google-Cloud.png
   - name: Flutter
     icon: NA
-    image: https://user-images.githubusercontent.com/51419598/152648731-567997ec-ac1c-4a9c-a816-a1fb1882abbe.png
+    image: images/icons/flutter.png
   - name: Adobe Photoshop
     icon: NA
-    image: https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png
+    image: images/icons/adobe_ps.png
   - name: Adobe Premiere
     icon: NA
-    image: https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Adobe_Premiere_Pro_CC_icon.svg/2101px-Adobe_Premiere_Pro_CC_icon.svg.png
+    image: images/icons/adobe_premiere.png
 
