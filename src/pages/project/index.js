@@ -23,11 +23,15 @@ const ProjectPage = ({ data }) => {
 }
 
 export const query = graphql`
-{
-    allMdx(sort: {fields: frontmatter___date, order: DESC}) {
+  {
+    allMdx(
+      sort: {fields: frontmatter___date, order: DESC}
+      filter: {frontmatter: {parent_name: {eq: "project"}}}
+    ) {
       nodes {
         id
         frontmatter {
+          parent_name
           description
           project_subtitle
           project_title

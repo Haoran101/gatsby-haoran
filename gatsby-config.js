@@ -28,6 +28,13 @@ const sharedPlugins = [
     }
   },
   {
+    resolve: "gatsby-source-filesystem",
+    options: {
+      name: `blog`,
+      path: `${__dirname}/src/content/blog/articles/`,
+    }
+  },
+  {
     resolve: `gatsby-source-filesystem`,
     options: {
       name: `resume`,
