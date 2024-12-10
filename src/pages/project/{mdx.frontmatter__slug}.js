@@ -22,7 +22,7 @@ const BlogPost = ({ data, children }) => {
           <span>
             <i class="fa-solid fa-arrow-left"></i>
           </span>
-          <span>
+          <span className="px-2">
             Back to all projects
           </span>
         </a>

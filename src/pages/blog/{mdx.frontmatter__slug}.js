@@ -2,8 +2,9 @@ import * as React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
+import LinkedInShareButton from '../../components/share'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import '../../styles/blog.css' 
+import '../../styles/blog.css'
 
 const BlogPost = ({ data, children }) => {
   const hero_image = getImage(data.mdx.frontmatter.hero_image)
@@ -11,19 +12,20 @@ const BlogPost = ({ data, children }) => {
   return (
     <Layout pageTitle={data.mdx.frontmatter.project_title}>
       <div className='py-4'>
-      <GatsbyImage
-        image={hero_image}
-        alt="alt"
-        style = {{overflow: "unset"}}
-      ></GatsbyImage></div>
-      <div className='text-light blog-wrapper'>{children}</div>
+        <GatsbyImage
+          image={hero_image}
+          alt="alt"
+          style={{ overflow: "unset" }}
+        ></GatsbyImage></div>
+      <div className='text-light'>{children}</div>
+      {/* <LinkedInShareButton title={data.mdx.frontmatter.project_title} summary={data.mdx.frontmatter.project_subtitle} source="Haoran Wei's Blog"></LinkedInShareButton> */}
       <div className='py-4 back-wrapper text-center'>
-        <a href="../../project">
+        <a href="../../blog">
           <span>
             <i class="fa-solid fa-arrow-left"></i>
           </span>
-          <span>
-            Back to all projects
+          <span className="px-2">
+            Back to all articles
           </span>
         </a>
       </div>
