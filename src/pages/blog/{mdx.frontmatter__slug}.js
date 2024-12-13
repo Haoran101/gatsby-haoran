@@ -17,7 +17,7 @@ const BlogPost = ({ data, children }) => {
           alt="alt"
           style={{ overflow: "unset" }}
         ></GatsbyImage></div>
-      <div className='text-light'>{children}</div>
+      <div className='text-light blog-wrapper'>{children}</div>
       {/* <LinkedInShareButton title={data.mdx.frontmatter.project_title} summary={data.mdx.frontmatter.project_subtitle} source="Haoran Wei's Blog"></LinkedInShareButton> */}
       <div className='py-4 back-wrapper text-center'>
         <a href="../../blog">

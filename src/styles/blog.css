@@ -23,6 +23,8 @@
 
 .blog-wrapper, .back-wrapper {
     font-family: 'Open Sans', sans-serif;
+    margin-left: 4vw; 
+    margin-right: 4vw;
 }
 
 .blog-wrapper p, .blog-wrapper li {
