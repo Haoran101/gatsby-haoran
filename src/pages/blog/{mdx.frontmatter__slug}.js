@@ -22,12 +22,8 @@ const BlogPost = ({ data, children }) => {
         subtitle={blog_subtitle} 
         createDate={create_date} 
         updateDate={update_date} 
+        currentLang={language}
       />
-      {/* <LinkedInShareButton 
-        title={blog_title} 
-        summary={blog_subtitle} 
-        source="Haoran Wei's Blog" 
-      /> */}
       <div className='text-light blog-wrapper'>{children}</div>
       <div className='py-4 back-wrapper text-center'>
         <a href="../../blog">
