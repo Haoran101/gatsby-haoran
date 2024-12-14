@@ -82,10 +82,12 @@ export const query = graphql`
           parent_name
           description
           blog_title
+          blog_subtitle
           blog_description
-          languages
+          language
           slug
-          date
+          create_date
+          update_date
           img_title
           index_image {
             childImageSharp {
