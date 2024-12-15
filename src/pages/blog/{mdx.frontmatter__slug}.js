@@ -67,11 +67,11 @@ query ($id: String) {
 `
 
 export const Head = ({ data }) => {
-  const { blog_title, blog_description, language } = data.mdx.frontmatter;
+  const { blog_title, blog_description, slug } = data.mdx.frontmatter;
   return <Seo title={blog_title}
     ogTitle={blog_title}
     ogDescription={blog_description}
-    ogUrl={window.location.href} />
+    ogUrl={`https://haoranwei.com/blog/${slug}`} />
 }
 
 export default BlogPost
