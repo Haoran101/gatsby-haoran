@@ -59,6 +59,12 @@ const sharedPlugins = [
 const blogConfig = {
   siteMetadata: {
     title: 'Haoran\'s Blog',
+    ogTitle: 'Haoran\'s Blog',
+    ogDescription: 'I share knowledge and stories with people. I help people to improve their quality of life.',
+    ogImage: 'https://github.com/Haoran101/gatsby-haoran/blob/master/src/content/readme/resume/images/profile.jpg?raw=true',
+    ogUrl: 'https://haoranwei.com/blog',
+    ogType: 'article',
+    ogSiteName: 'haoranwei.com',
     description: 'stories.haoranwei.com',
   },
   plugins: sharedPlugins
@@ -68,6 +74,12 @@ const mainConfig = {
   siteMetadata: {
     title: "Haoran Wei",
     description: 'Haoran Wei\'s Home',
+    ogTitle: 'Haoran Wei\'s Home',
+    ogDescription: 'I share knowledge and stories with people. I help people to improve their quality of life.',
+    ogImage: 'https://github.com/Haoran101/gatsby-haoran/blob/master/src/content/readme/resume/images/profile.jpg?raw=true',
+    ogUrl: 'https://haoranwei.com',
+    ogType: 'article',
+    ogSiteName: 'haoranwei.com',
   },
   plugins: sharedPlugins
 }

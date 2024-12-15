@@ -42,14 +42,24 @@ export const BlogHeader = ({ title, subtitle, createDate, updateDate, currentLan
   );
 };
 
-export const LinkedInShareButton = ({ title, summary, source }) => {
+export const LinkedInShareButton = ({ title, summary, source}) => {
   return (
-    <div className="linkedin-share-button">
-      <button onClick={() => {
-        const url = `https://www.linkedin.com/shareArticle?mini=true&url=${window.location.href}&title=${title}&summary=${summary}&source=${source}`;
+    <div className="linkedin-share-button blog-wrapper my-2">
+      <button 
+      className='btn btn-dark'
+        onClick={() => {
+        // Build LinkedIn share URL with the following parameters:
+        // - url: Current page URL (window.location.href)
+        // - title: Title of the article to share
+        // - summary: Brief description/summary of the article
+        // - source: Source/website name where article is from
+        const url = `https://www.linkedin.com/sharing/share-offsite/?url=${window.location.href}`;
+        
+        // Open LinkedIn share dialog in new window/tab
         window.open(url, '_blank');
       }}>
-        Share on LinkedIn
+        <span>Share on </span>
+        <i className="fa-brands fa-linkedin ml-3"></i>
       </button>
     </div>
   );

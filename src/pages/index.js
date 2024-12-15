@@ -43,30 +43,24 @@ React.useEffect(() => {
   return (
     <Layout>
       <main className="px-3 my-auto text-center">
-        <h1>Hello.</h1>
-        <p className="lead px-2 fs-4">
-          Software Test Engineer <span className="slash">/</span> Quality Assurance <br></br>
-          passionate <span className="slash">/</span> detail-oriented <span className="slash">/</span> quick-learner
+        <h1>Hello. I'm Haoran</h1>
+        <p className="lead px-2 fs-4 pt-2">
+          I share knowledge and stories with people<br/> 
+          I help people to improve their quality of life <br/>
+           Software Quality Engineer <span className="slash"> / </span> 
+           Self Starter <span className="slash"> / </span> 
+           Content Creator
         </p>
-        <p className="lead">
-          <a href="./resume" className="btn btn-md fw-bold border-white bg-white text-black my-4">Know More</a>
-        </p>
+        <div className="lead my-4">
+          <span className='px-2'>
+          <a href="./blog" className="btn btn-md fw-bold border-white bg-white text-black">Read Me</a>
+          </span>
+          <span className='px-2'>
+          <a href="./resume" className="btn btn-md fw-bold border-white bg-white text-black">Hire Me</a>
+          </span>
+        </div>
       </main>
 
-      <footer className="mt-auto text-light text-center footer-container">
-        <a href="tel:+6585101992" className='mx-3'>
-          <i className="fa-solid fa-phone"></i>
-        </a>
-        <a href="mailto:wei.haoran@hotmail.com" className='mx-3'>
-          <i className="fa-solid fa-at"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/haoran-wei-6b3a571a5/" className='mx-3'>
-          <i className="fa-brands fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/Haoran101" className='mx-3'>
-        <i className="fa-brands fa-github"></i>
-        </a>
-      </footer>
     </Layout>
   )
 }
