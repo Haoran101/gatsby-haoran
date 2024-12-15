@@ -55,6 +55,7 @@ query ($id: String) {
       create_date(formatString: "MMMM D, YYYY HH:mm")
       update_date(formatString: "MMMM D, YYYY HH:mm")
       language
+      ogImage
       hero_image {
         childImageSharp {
           gatsbyImageData
@@ -67,10 +68,11 @@ query ($id: String) {
 `
 
 export const Head = ({ data }) => {
-  const { blog_title, blog_description, slug } = data.mdx.frontmatter;
+  const { blog_title, blog_description, slug, ogImage } = data.mdx.frontmatter;
   return <Seo title={blog_title}
     ogTitle={blog_title}
     ogDescription={blog_description}
+    ogImage={`https://haoranwei.com/images/${ogImage}`}
     ogUrl={`https://haoranwei.com/blog/${slug}`} />
 }
 
