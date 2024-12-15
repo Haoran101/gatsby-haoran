@@ -51,6 +51,7 @@ query ($id: String) {
       blog_title
       blog_subtitle
       blog_description
+      slug
       create_date(formatString: "MMMM D, YYYY HH:mm")
       update_date(formatString: "MMMM D, YYYY HH:mm")
       language
@@ -69,7 +70,8 @@ export const Head = ({ data }) => {
   const { blog_title, blog_description, language } = data.mdx.frontmatter;
   return <Seo title={blog_title}
     ogTitle={blog_title}
-    ogDescription={blog_description} />
+    ogDescription={blog_description}
+    ogUrl={window.location.href} />
 }
 
 export default BlogPost
