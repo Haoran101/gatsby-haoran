@@ -8,15 +8,10 @@ import '../../styles/blog.css'
 
 const BlogPost = ({ data, children }) => {
   const { blog_title, blog_subtitle, blog_description, create_date, update_date, language } = data.mdx.frontmatter;
-  const hero_image = getImage(data.mdx.frontmatter.hero_image)
+  const isZh = window.location.pathname.includes('/zh');
+  const blogHome = isZh ? "../../blog/zh" : "../../blog";
   return (
     <Layout pageTitle={blog_title}>
-      <div className='py-4'>
-        <GatsbyImage
-          image={hero_image}
-          alt="alt"
-          style={{ overflow: "unset" }}
-        ></GatsbyImage></div>
       <BlogHeader
         title={blog_title}
         subtitle={blog_subtitle}
@@ -31,7 +26,7 @@ const BlogPost = ({ data, children }) => {
         source="Haoran Wei's Blog"
       />
       <div className='py-4 back-wrapper text-center'>
-        <a href="../../blog">
+        <a href={blogHome}>
           <span>
             <i class="fa-solid fa-arrow-left"></i>
           </span>

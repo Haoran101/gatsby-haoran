@@ -1,8 +1,9 @@
 import React from 'react';
 
-export const LanguageSwitchButton = ({ currentLang }) => {
+export const LanguageSwitchButton = ({ currentLang, alignment }) => {
+  const alignClass = alignment === 'center' ? 'text-center' : 'text-start';
   return (
-    <div className="text-left">
+    <div className={alignClass}>
       {/* Language switch button that toggles between English and Chinese versions
           If current language is Chinese (zh):
             - Removes '/zh/' from path to get English version
@@ -18,9 +19,9 @@ export const LanguageSwitchButton = ({ currentLang }) => {
       <button 
         className="btn btn-outline-light mt-3 mb-3"
         onClick={() => {
-          const newPath = currentLang === 'zh' 
-            ? window.location.pathname.replace('/zh/', '/') 
-            : window.location.pathname.replace('/blog/', '/blog/zh/');
+          const newPath = currentLang === 'zh'
+            ? window.location.pathname.replace(/\/zh\/?/, '/') 
+            : window.location.pathname.replace(/\/blog\/?/, '/blog/zh/');
           window.location.href = newPath;
         }}
       >

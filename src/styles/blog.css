@@ -1,6 +1,11 @@
-.blog-wrapper a, .back-wrapper a{
+.back-wrapper a{
     text-decoration: none;
     color: aliceblue;
+}
+
+.blog-wrapper a {
+    text-decoration: none;
+    color: cyan;
 }
 
 .blog-wrapper a:hover, .back-wrapper a:hover{

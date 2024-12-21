@@ -7,7 +7,7 @@ import '../../styles/project_index.scss'
 import { Link, graphql } from "gatsby"
 //import Bio from "../components/bio"
 
-const BlogIndex = ({ data, location }) => {
+const BlogIndexZh = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMdx.nodes
   
@@ -28,11 +28,11 @@ const BlogIndex = ({ data, location }) => {
   }
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} title="Haoran Wei's Blog">
       <ol style={{ listStyle: `none` }} className="blog-wrapper">
         {filteredPosts.map(post => {
           const title = post.frontmatter.blog_title || post.frontmatter.slug
-
+          const pureSlug = post.frontmatter.slug.split('/')[1]
           return (
             <li key={post.frontmatter.slug}>
               <article
@@ -42,11 +42,11 @@ const BlogIndex = ({ data, location }) => {
               >
                 <header>
                   <h3>
-                    <Link to={post.frontmatter.slug} itemProp="url">
+                    <Link to={pureSlug} itemProp="url">
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h3>
-                  <small>Created: {post.frontmatter.create_date}</small>
+                  <small>创建于 {post.frontmatter.create_date}</small>
                 </header>
                 <section>
                   <p
@@ -65,7 +65,7 @@ const BlogIndex = ({ data, location }) => {
   )
 }
 
-export default BlogIndex
+export default BlogIndexZh
 
 export const Head = () => <Seo title="All posts" />
 
