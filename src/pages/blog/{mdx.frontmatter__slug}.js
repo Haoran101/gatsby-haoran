@@ -6,9 +6,9 @@ import { BlogHeader, LinkedInShareButton } from '../../components/BlogComponents
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import '../../styles/blog.css'
 
-const BlogPost = ({ data, children }) => {
+const BlogPost = ({ data, children, location }) => {
   const { blog_title, blog_subtitle, blog_description, create_date, update_date, language } = data.mdx.frontmatter;
-  const isZh = window.location.pathname.includes('/zh');
+  const isZh = location.pathname.includes('/zh');
   const blogHome = isZh ? "../../blog/zh" : "../../blog";
   return (
     <Layout pageTitle={blog_title}>
