@@ -3,14 +3,13 @@ experience:
   - company: Garena Pte Ltd
     period: Feb 2024 - Current
     year: 2024
-    title: Software Quality Engineer
+    title: Senior Software Quality Engineer
     description: Full-stack Testing on Auth, Payment, Shop, Game Admin Systems
     job:
     - > 
-      Conducted server-side API testing on essential and critical services including payment, 
-      in-app-purchase, order management, authentication and authorization.
-    - Performed integration testing with 20+ global payment gateway partners.
-    - UI/UX Testing on the Garena official top-up center website which sells in-game items in 20+ regions worldwide.
+      Tested backend APIs for core services—payment, in-app purchases, order management, and authentication—used by millions of daily gamers.
+    - Performed API integration testing with 20+ global payment gateway partners.
+    - Tested UI/UX of Garena's official top-up center, which delivers in-game purchases across 20+ global regions.
     - Improved on existing API automation testing frameworks and introduced open-source API mocking tool to team.
     - Worked as a release manager on multiple Kubernetes clusters for development, testing and production.
     - Collaborated with DevOps on improving CI/CD Jenkins pipeline and Gitlab CI for a smoother release workflow.
@@ -19,7 +18,7 @@ experience:
     - Integration Testing
     - Contract Testing
     - End-to-end Testing
-    - Ansible
+    - CI/CD
   - company: Dell Technologies
     period: Oct 2022 - Feb 2024
     year: 2023

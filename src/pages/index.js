@@ -52,9 +52,9 @@ React.useEffect(() => {
            Content Creator
         </p>
         <div className="lead my-4">
-          <span className='px-2'>
+          {/* <span className='px-2'>
           <a href="./blog" className="btn btn-md fw-bold border-white bg-white text-black">Read Me</a>
-          </span>
+          </span> */}
           <span className='px-2'>
           <a href="./resume" className="btn btn-md fw-bold border-white bg-white text-black">Hire Me</a>
           </span>
